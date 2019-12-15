@@ -1,8 +1,12 @@
 header {
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
+    padding-right:15px;
 }
+
+.loginheader {
+    background-color: white;
+
+}
+
 
 footer {
     font-size: 10px;
@@ -62,7 +66,7 @@ body {
 }
 
 .dropbtn {
-  background-color: white;
+background-color: inherit;
   color: black;
   padding: 16px;
   font-size: 16px;
@@ -91,12 +95,37 @@ body {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ffffff}
+.dropdown-content a:hover {background-color: white}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #ffffff;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.image {
+    opacity: 30%;
+}
+
+
+.icon {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.white {
+    background-color: white;
+    margin: 10px;
 }
