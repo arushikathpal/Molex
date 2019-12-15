@@ -1,5 +1,6 @@
 header {
-    padding-right:15px;
+    padding-right:40px;
+    padding-left:10px;
 }
 
 .loginheader {
@@ -121,11 +122,34 @@ background-color: inherit;
 
 .icon {
     margin-top: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.white {
-    background-color: white;
-    margin: 10px;
+.green {
+    background-color: lightgreen;
+    padding: 10px;
+    
+}
+
+.red {
+    background-color: red;
+    padding: 10px;
+    
+}
+
+.yellow {
+    background-color: yellow;
+    padding: 10px;
+    
+}
+
+.pink {
+    background-color: pink;
+    padding: 10px;
+    
+}
+
+.mainpadding {
+    padding:30px;
 }
