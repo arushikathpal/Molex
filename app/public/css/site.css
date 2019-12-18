@@ -24,19 +24,20 @@ table {
     padding: 3px;
     margin-bottom: 20px;
     width: 100%;
+
 }
 
 th {
   border: 1px solid black;
     padding: 3px;
-    background-color: black;
-    color: white;
+    background-color: lightgrey;
+border-bottom-color: black;
 }
 
 td {
   border: 1px solid black;
     padding: 3px;
-    background-color: white;
+
 }
 
 html {
@@ -49,17 +50,17 @@ body {
 }
 
 .leftalign {text-align: left;
-    
+
 }
 .centeralign {text-align: center;
-    
+
 }
 .rightalign {text-align: right;
-    
+
 }
 
 .paddingtop {padding-top: 20px;
-    
+
 }
 
 .dropbtn {
@@ -97,7 +98,7 @@ background-color: inherit;
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: inherit;
@@ -220,7 +221,7 @@ background-color: inherit;
     font-size:10px;
     margin: 10px;
     font-size: 15px;
-    
+
 }
 
 .tile2:after {
@@ -249,7 +250,12 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 border-bottom: 2px solid darkgrey;
-    
+
+}
+
+form{
+  margin:0 auto;
+  width:300px;
 }
 
 li a:hover {
@@ -266,7 +272,7 @@ text-decoration: none;
 .active {
    text-decoration: none;
     border-bottom: 2px solid black;
-    color: black; 
+    color: black;
 }
 
 .demo {

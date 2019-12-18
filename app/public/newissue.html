@@ -44,9 +44,9 @@
   padding: 10px;">
   <li><img src="images/bugzilla.png" alt="SAP logo" height="50" width="160"></li>
   <li><a href="newissue.html">Open New Issue </a></li>
-  <li><a href="hypercare.html">Opened Issues</a></li>
+  <li><a href="opened.html">Opened Issues</a></li>
   <li><a href="closed.html">Closed Issues </a></li>
-  <li><a href="closed.html">Pending issues</a></li>
+  <li><a href="pending.html">Pending issues</a></li>
     <li><a href="help.html">Help</a></li>
 </ul>
     </div>
@@ -104,42 +104,60 @@ window.onclick = function(event) {
 </script>
 
 
-    <div class="row mainpadding">
-    </div>
+      <form>
+          <label for="disabledTextInput">Issue Status:</label> <b style="color:red">  New</b><br>
+        <label>Product:</label> <br>
+        <select class="custom-select custom-select-lg mb-3">
+  <option selected>Open this select menu</option>
+  <option value="1"> S/4 HANA - Fiori </option>
+  <option value="2"> SAP Ariba </option>
+  <option value="3">Sucess Factors</option
+  <option value="3">Other</option>
+  </select>
 
-    <table class="table table-hover">
-  <thead >
-    <tr>
-      <th scope="col">Bug ID</th>
-      <th scope="col">Issue</th>
-      <th scope="col">Priority</th>
-      <th scope="col">Assignee</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row"><a href=bug.html>13487487</a></th>
-      <td>Delay in response while using Forecasting Fiori App</td>
-      <td style=background:#EC7063>Red</td>
-      <td>Janice Mohler</td>
-    </tr>
-    <tr>
-      <td scope="row"><a href=Bug.html>13487488</a></th>
-      <td>Cached Data viewed in Fiori Analytics app until page refresh</td>
-      <td style=background:#EC7063>Red</td>
-      <td>Taylor Steinberg</td>
-    </tr>
-    <tr>
-      <td scope="row"><a href=Bug.html>13487488</a></th>
-      <td>Check feasibility of customizing statistics on production planning</td>
-      <td style="background:yellow">Yellow</td>
-      <td>Rafi Alighan</td>
-    </tr>
-  </tbody>
-</table>
+<br>
+          <label>Component:</label>
+          <br>
+          <select class="custom-select custom-select-lg mb-3">
+    <option selected>Open this select menu</option>
+    <option value="1"> Material  (MM) </option>
+    <option value="2"> Quality  (QM) </option>
+    <option value="3"> Plant (PM) </option>
+    <option value="4"> CRM </option>
+    <option value="5"> Sales & Distr. (SD) </option>
+    <option value="6"> FICO </option>
+    <option value="7"> Producution (PP) </option>
+    <option value="8"> Warehouse  (WM) </option>
+    <option value="9">  MII </option>
+    <option value="10">Other</option>
+    </select>
+<br>
+    <label>Category</label><br>
+    <select class="custom-select custom-select-lg mb-3">
+<option selected>Open this select menu</option>
+<option value="1"> Performance </option>
+<option value="2"> Data Quality </option>
+<option value="3"> Data accuracy </option>
+<option value="4"> Broken functionality </option>
+<option value="3">Other</option>
+</select>
 
-</main>
-
+<br>
+<label>Priority</label><br>
+<select class="custom-select custom-select-lg mb-3">
+<option selected>Open this select menu</option>
+<option value="1"> Red - Critical </option>
+<option value="2"> Yellow - Moderate </option>
+<option value="3">Assign no color </option>
+</select>
+<br>
+<label for="exampleFormControlTextarea1">Issue Description:</label> <br>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder ="Please mention: A short summary and time of the issue occurence Attach: Logs pertaining to the issue"></textarea>
+<br>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+<br>
+        <input type="submit" class="btn btn-primary" onclick="return confirm('Bug #13656478 created and automatically assigned to Tom Gregory for his debugging')" />
+</form>
 <footer>
 </footer>
 </body>
